@@ -1,0 +1,54 @@
+<!-- login: a login screen with two fields: One for the username/email and one for
+the password The username and email occupy the same field. They should
+be interchangeable with one another. The user can enter their username OR
+email to login, but not both. The same type of login most websites use.) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+
+    <title>Login Form</title>
+</head>
+
+<body>
+    <center>
+        <br><br><br>
+        <img src="../favicon_io/apple-touch-icon.png">
+        <h1>Login Form</h1>
+        
+        <form class="login-form" id="login" action="#">
+            <!-- <div class="login-form">
+                <label for="usernameOrEmail">Username or Email: </label>
+                <input type="text" name="usernameOrEmail" id="usernameOrEmail" required>
+            </div> -->
+            <div class="login-form">
+                <label for="usernameOrEmail">Username or Email: </label>
+                <input type="text" name="usernameOrEmail" id="usernameOrEmail" required>
+            </div>
+            <div class="login-form">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <br>
+            <div class="login-form">
+                <label></label>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <div class="error" id="error-text"></div>
+        <br>
+        <div class="sign-txt">Not yet member? <a href="./register.html">Signup now</a></div>
+    </center>
+
+    <script src="../scripts/login.js"></script>
+
+</body>
+
+</html>

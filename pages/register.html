@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div>
+        <center>
+        <br><br><br>
+        <img src="../favicon_io/apple-touch-icon.png">
+        <h1>Registration Form</h1>
+        
+        <form class="login-form" id="register-form" action="#">
+            <div class="login-form">
+                <label for="username">Username: </label>
+                <input name="username" id="username" required>
+            </div>
+            <div class="login-form">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="login-form">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="login-form">
+                <label for="isAdmin">Are you an admin?</label>
+                <input type="checkbox" id="isAdmin" name="isAdmin">
+            </div>
+            <br>
+            <div class="login-form">
+                <label></label>
+                <input type="submit" value="Register!">
+            </div>
+        </form>
+        <div class="error" id="error-text"></div>
+        <br>
+        <div class="sign-txt">Already a Member? <a href="./login.html">Login</a></div>
+    </div>
+
+    <script src="../scripts/register.js"></script>
+    </center>
+</body>
+
+</html>

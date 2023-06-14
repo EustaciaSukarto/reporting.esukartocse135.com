@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Management</title>
+  <link rel="stylesheet" type="text/css" href="../index.css">
+</head>
+<body>
+  <center>
+  <h1>User Management</h1>
+  <button id="logout">Logout</button>
+  <script src="../scripts/logout.js"></script>
+  <table id="grid">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Hashed Password</th>
+        <th>Admin</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <br>
+
+  <button id="create-button">Create User</button>
+
+  <br><br>
+  <form id="create-form" class="hide">
+    <div class="user-form">
+      <label for="create-username">Username:</label>
+      <input type="text" id="create-username" required>
+    </div>
+    <div class="user-form">
+      <label for="create-email">Email:</label>
+      <input type="email" id="create-email" required>
+    </div>
+    <div class="user-form">
+      <label for="create-password">Password:</label>
+      <input type="password" id="create-password" required>
+    </div>
+    <div class="user-form">
+      <label for="create-admin">Is Admin:</label>
+      <input type="checkbox" id="create-admin">
+    </div>
+    <br>
+    <button type="submit">Create User</button>
+    <button type="button" onclick="cancelCreate()">Cancel</button>
+  </form>
+
+  <form id="update-form" class="hide">
+      <input type="hidden" id="update-id">
+    <div class="user-form">
+      <label for="update-username">Username:</label>
+      <input type="text" id="update-username" required>
+    </div>
+    <div class="user-form">
+      <label for="update-email">Email:</label>
+      <input type="email" id="update-email" required>
+    </div>
+    <div class="user-form">
+      <label for="update-password">Password:</label>
+      <input type="password" id="update-password" required>
+    </div>
+    <div class="user-form">
+      <label for="update-admin">Is Admin:</label>
+      <input type="checkbox" id="update-admin">
+    </div>
+    <button type="submit">Update User</button>
+    <button type="button" onclick="cancelUpdate()">Cancel</button>
+  </form>
+
+  <script src="../scripts/users.js"></script>
+  <script>
+
+    function cancelCreate() {
+      document.getElementById('create-form').reset();
+      document.getElementById('create-form').classList.add('hide');
+    }
+
+    function cancelUpdate() {
+      document.getElementById('update-form').reset();
+      document.getElementById('update-form').classList.add('hide');
+    }
+  </script>
+  </center>
+</body>
+</html>

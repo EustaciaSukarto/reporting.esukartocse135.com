@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+form.login-form, form.create-form, form.update-form {
+    display: table;
+}
+div.login-form, div.user-form {
+    display: table-row;
+}
+label,input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+label {
+    padding-right: 10px;
+}
+.error {
+    color: red;
+}
+#lineChart {
+    height: 50%;
+    width: 100%;
+    min-height: 150px;
+}
+#barChart {
+    height: 50%;
+    width: 100%;
+    min-height: 150px;
+}
+.pieChart {
+    height: 50%;
+    width: 50%;
+    /* min-height: 150px; */
+}
+.zc-ref {
+    display: none;
+}
+#logout {
+    /* position: 0px 0px fixed; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px; 
+    padding: 10px;
+}
+/* #userManagement {
+    position: 50px 50px fixed;
+} */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0;
+}
+.grid-item {
+    width: 100%;
+}
+#discussion {
+    padding: 20px;
+    margin: 20px;
+}
+a:link {
+    color: rgb(174, 133, 203);
+}
+a:visited {
+    color: rgb(240, 169, 38);
+}
+.link {
+    border: 2px solid rgb(174, 133, 203);
+    padding: 10px;
+    font-size: 20px;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid white;
+    padding: 5px;
+}
+th {
+    background-color: gray;
+    color: black;
+}
+.hide {
+    display: none;
+}
+#create-button {
+    padding: 10px;
+}

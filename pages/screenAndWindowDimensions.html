@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css" href="../index.css">
+
+  <title>Session Screen and Window Dimensions</title>
+  <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+  <script src="https://cdn.zinggrid.com/zinggrid.min.js"></script>
+</head>
+<body>
+  <!-- <div id="userManagement"></div> -->
+  <script src="../scripts/metric.js"></script>
+  <button id="logout">Logout</button>
+  <script src="../scripts/logout.js"></script>
+
+  <h1><center>Detailed Report on Session Screen and Window Dimensions</center></h1>
+  <p><center>How to use data on session screen and window dimensions for better UI design?</center></p>
+
+  <div id="minMaxDimensions">
+    <zing-grid id="minMaxGrid" caption="Min and Max Dimensions" theme="dark">
+      <script src="../scripts/minMaxDimensionsGrid.js"></script>
+    </zing-grid>
+  </div>
+
+  <div class="grid-container">
+    <div id="screenWidth" class="pieChart grid-item">
+      <div id='screenWidthPC'><a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a></div>
+      <script src="../scripts/screenWidthChart.js"></script>
+    </div>
+
+    <div id="screenHeight" class="pieChart grid-item">
+      <div id='screenHeightPC'><a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a></div>
+      <script src="../scripts/screenHeightChart.js"></script>
+    </div>
+
+    <div id="windowWidth" class="pieChart grid-item">
+      <div id='windowWidthPC'><a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a></div>
+      <script src="../scripts/windowWidthChart.js"></script>
+    </div>
+
+    <div id="windowHeight" class="pieChart grid-item">
+      <div id='windowHeightPC'><a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a></div>
+      <script src="../scripts/windowHeightChart.js"></script>
+    </div>
+  </div>
+
+  <div id="combinedDimensions">
+    <zing-grid id="combinedDimensionsGrid" caption="Dimension Combinations Count" layout-controls pager page-size="5" theme="dark">
+      <script src="../scripts/combinedDimensionsCountGrid.js"></script>
+    </zing-grid>
+  </div>
+
+  <div id="discussion">
+    <h2><center><u>Discussion</u></center></h2>
+    <p>
+      The data above shows that users access the esukartocse135.com homepage with different screen and window sizes on their devices. Through this collected data, the developers for esukartocse135.com can make informed decisions on its UI design, using responsive design principles to ensure that the website adapts to different screen and window dimensions. This would help maintain the consistency in the website design.
+    </p>
+    <ul>
+      <li>Max and Min Session Dimensions:</li>
+      <p>The "Maximum and Minimum Dimensions" table show the range of screen and window sizes used by users to access the website. Current data shows that there are sessions accessed from both small and large devices. Developers should accommodate for users with small and large screen and window dimensions, creating a responsive design that can adapt to a wide range of device sizes, ensuring consistent user experience for both larger and smaller screens.</p>
+
+      <li>Ratio of Individual Dimensions:</li>
+      <p>Each of the four pie charts represent the ratio of individual screen and window dimensions. They visualize the distribution of screen and window sizes among user sessions. Current data shows that majority of the sessions are accessed from devices with large screens and windows, as seen from the larger sections of the pie charts. However, there are also some sessions acessed from smaller screens and windows, as seen from the smaller slices. Developers could use this data to prioritize design layouts and content for the more common larger dimensions, while still ensuring compatibility with less common smaller sizes. This would help optimize user experience across various screen and window dimensions.
+      </p>
+
+      <li>Count of Dimension Combinations</li>
+      <p>The "Dimension Combinations Count" table shows the number of sessions for each set of screen and window dimensions. Current data indicates that the most common combination for screenWidth, screenHeight, windowWidth, windowHeight is 900, 1400, 700, 1400 respectively, with 53 sessions in total. To ensure that most sessions have the best user experience, developers should ensure optimal design and functionality for this specific combination of dimensions since it is by far the most common set. Again, this data could help guide developers in making decisions for responsive design and the most common users of the website would have better user experience with the website layout designed with them in mind.</p>
+    </ul>
+    <p>
+      By accommodating a wide range of screen and window sizes, and optimizing for the most common dimensions (currently large sizes), developers can deliver an excellent user experience across various devices. In return, users would have better experience using this accessible and user-friendly website, regardless of the device they use to access the content. If in contrast to current data, future data indicates that majority of the user sessions are accessed from devices with a smaller screen, developers could instead prioritize placing essential information in the top area of the website to ensure that it is visible without having to scroll much. This way, more users accessing the website would be able to find essential information with less effort, improving user experience.
+    </p>
+  </div>
+  
+</body>
+ 
+</html>

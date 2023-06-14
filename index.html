@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+
+  <title>Reporting Dashboard</title>
+  <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+  <script src="https://cdn.zinggrid.com/zinggrid.min.js"></script>
+</head>
+<body>
+  <center>
+    <h1><img src="../favicon_io/favicon-32x32.png"> Reporting Dashboard</h1>
+  </center>
+  <div id="userManagement" class="link"></div>
+  <script src="./scripts/dashboard.js"></script>
+  
+  <button id="logout">Logout</button>
+  <script src="./scripts/logout.js"></script>
+
+  <!-- 3-series line chart -->
+  <!-- <div  style="overflow-x: auto;"> -->
+    <div id="lineChart">
+      <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
+    </div>
+    <script src="./scripts/userAndSessionCountChart.js"></script>
+  <!-- </div> -->
+  <br>
+  <!-- 2-series bar chart -->
+  <div id="barChart">
+    <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
+  </div>
+  <script src="./scripts/permissionSettingsChart.js"></script>
+  <br>
+  <div id="userLanguage">
+    <zing-grid id="userLanguageGrid" caption="User Language Data" layout-controls pager page-size="5" theme="dark">
+      <script src="./scripts/userLanguageGrid.js"></script>
+    </zing-grid>
+  </div>
+  <br>
+  <div id="dimensions">
+    <div class="link">
+      <a href="./pages/screenAndWindowDimensions.html">
+        Detailed Report (Screen and Window Dimensions)
+      </a>
+    </div>
+    <zing-grid id="dimensionsGrid" caption="Screen and Window Dimensions Data" layout-controls pager page-size="5" theme="dark">
+      <script src="./scripts/dimensionsGrid.js"></script>
+    </zing-grid>
+  </div>
+</body>
+ 
+</html>
